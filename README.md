@@ -1,3 +1,3 @@
-# personal-knowledge-base-
+# personal-knowledge-base
 
 ## Daliy update

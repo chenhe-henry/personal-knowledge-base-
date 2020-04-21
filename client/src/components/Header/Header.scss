@@ -1,8 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+
 .section__header {
   &-link {
     text-decoration: none;
     color: black;
     font-weight: 800;
+  }
+  &-title {
+    font-family: "Tangerine", cursive;
+    font-size: 2rem;
+  }
+}
+.title {
+  display: inline-block;
+  font-size: 4rem;
+  &:hover {
+    color: blue;
   }
 }
 .category {

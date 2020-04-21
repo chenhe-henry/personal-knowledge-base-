@@ -7,8 +7,11 @@ class Header extends React.Component {
   render() {
     return (
       <div className="section__header">
+        <div className="section__header-title">
+          <p>Personal Knowledge Base</p>
+        </div>
         <Link to="/" className="section__header-link">
-          Chen He
+          <div className="title">Chen He</div>
         </Link>
         <hr />
         <div className="category">
