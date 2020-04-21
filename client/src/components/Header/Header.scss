@@ -6,10 +6,13 @@
   }
 }
 .category {
+  margin: 20px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto, 1fr);
+
   &__link {
-    margin: 2vw;
     padding: 55px;
     border: 2px solid black;
     transition: all 0.2s;

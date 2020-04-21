@@ -10,6 +10,7 @@ class Header extends React.Component {
         <Link to="/" className="section__header-link">
           Chen He
         </Link>
+        <hr />
         <div className="category">
           <Link to="/htmlbase" className="section__header-link">
             <div className="category__link">HTML</div>
