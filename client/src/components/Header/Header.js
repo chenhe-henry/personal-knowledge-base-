@@ -6,22 +6,24 @@ class Header extends React.Component {
   state = {};
   render() {
     return (
-      <div>
-        <Link to="/">Chen He</Link>
+      <div className="section__header">
+        <Link to="/" className="section__header-link">
+          Chen He
+        </Link>
         <div className="category">
-          <Link to="/htmlbase">
+          <Link to="/htmlbase" className="section__header-link">
             <div className="category__link">HTML</div>
           </Link>
-          <Link to="/cssbase">
+          <Link to="/cssbase" className="section__header-link">
             <div className="category__link">CSS</div>
           </Link>
-          <Link to="/javascriptbase">
+          <Link to="/javascriptbase" className="section__header-link">
             <div className="category__link">Javascript</div>
           </Link>
-          <Link to="reactbase">
+          <Link to="reactbase" className="section__header-link">
             <div className="category__link">React</div>
           </Link>
-          <Link to="herokubase">
+          <Link to="herokubase" className="section__header-link">
             <div className="category__link">Heroku</div>
           </Link>
         </div>

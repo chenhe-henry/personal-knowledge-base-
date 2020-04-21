@@ -1,3 +1,10 @@
+.section__header {
+  &-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+  }
+}
 .category {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -5,5 +12,13 @@
     margin: 2vw;
     padding: 55px;
     border: 2px solid black;
+    transition: all 0.2s;
+    &:hover {
+      background-color: aqua;
+      transform: translateY(-5px);
+    }
+    &:active {
+      transform: translateY(0);
+    }
   }
 }
