@@ -1,5 +1,12 @@
 .App {
   margin: 2.5vh 2.5vw;
   padding: 0;
+  height: 95vh;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("https://loveisfrontend.com/wp-content/uploads/2020/02/code-coding-computer-data-574073-720x480.jpg");
+  background-size: cover;
 }

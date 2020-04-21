@@ -21,13 +21,21 @@ class Header extends React.Component {
           <Link to="/javascriptbase" className="section__header-link">
             <div className="category__link">Javascript</div>
           </Link>
-          <Link to="reactbase" className="section__header-link">
+          <Link to="/reactbase" className="section__header-link">
             <div className="category__link">React</div>
           </Link>
-          <Link to="herokubase" className="section__header-link">
+          <Link to="/herokubase" className="section__header-link">
             <div className="category__link">Heroku</div>
           </Link>
+          <Link to="/todo" className="section__header-link">
+            <div className="category__link">Todo</div>
+          </Link>
+          <Link to="/codingchallenge" className="section__header-link">
+            <div className="category__link">Coding Challenges</div>
+          </Link>
         </div>
+        <hr />
+        <div>Landing Page</div>
       </div>
     );
   }

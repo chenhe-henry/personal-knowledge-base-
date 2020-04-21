@@ -9,17 +9,31 @@ import CssBase from "./components/CssBase/CssBase";
 import JavascriptBase from "./components/JavascriptBase/JavascriptBase";
 import ReactBase from "./components/ReactBase/ReactBase";
 import HerokuBase from "./components/HerokuBase/HerokuBase";
+import Todo from "./components/Todo/Todo";
+import CodingChallenge from "./components/CodingChallenge/CodingChallenge";
 
 function App() {
   return (
     <div className="App" id="home">
       <BrowserRouter>
         <Header />
-        <Route exact path="/htmlbase" component={HtmlBase}></Route>
-        <Route exact path="/cssbase" component={CssBase}></Route>
-        <Route exact path="/javascriptbase" component={JavascriptBase}></Route>
-        <Route exact path="/reactbase" component={ReactBase}></Route>
-        <Route exact path="/herokubase" component={HerokuBase}></Route>
+        <div className="body">
+          <Route exact path="/htmlbase" component={HtmlBase}></Route>
+          <Route exact path="/cssbase" component={CssBase}></Route>
+          <Route
+            exact
+            path="/javascriptbase"
+            component={JavascriptBase}
+          ></Route>
+          <Route exact path="/reactbase" component={ReactBase}></Route>
+          <Route exact path="/herokubase" component={HerokuBase}></Route>
+          <Route exact path="/todo" component={Todo}></Route>
+          <Route
+            exact
+            path="/codingchallenge"
+            component={CodingChallenge}
+          ></Route>
+        </div>
         <Footer />
       </BrowserRouter>
     </div>
