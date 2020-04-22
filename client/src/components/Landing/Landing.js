@@ -27,6 +27,9 @@ class Landing extends React.Component {
         <Link to="/codingchallenge" className="section__landing-link">
           <div className="category__link">Coding Challenges</div>
         </Link>
+        <Link to="/projects" className="section__landing-link">
+          <div className="category__link">Projects</div>
+        </Link>
       </div>
     );
   }

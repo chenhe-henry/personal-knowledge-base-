@@ -11,6 +11,7 @@ import ReactBase from "./components/ReactBase/ReactBase";
 import HerokuBase from "./components/HerokuBase/HerokuBase";
 import Todo from "./components/Todo/Todo";
 import CodingChallenge from "./components/CodingChallenge/CodingChallenge";
+import Project from "./components/Project/Project";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           path="/codingchallenge"
           component={CodingChallenge}
         ></Route>
+        <Route exact path="/projects" component={Project}></Route>
         <Footer />
       </BrowserRouter>
     </div>
