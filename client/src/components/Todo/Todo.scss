@@ -1,0 +1,21 @@
+.navigation {
+  margin-left: 10px;
+  text-align: left;
+}
+.nav {
+  display: inline-block;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+  color: rgba(17, 213, 235, 0.8);
+  text-decoration: underline;
+}
+
+.nav::after {
+  content: "/";
+  margin: 20px;
+}
