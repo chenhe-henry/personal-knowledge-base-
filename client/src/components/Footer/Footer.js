@@ -5,8 +5,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="section__footer">
-        <hr />
-        This is footer
+        <p>Chen's personal website</p>
       </div>
     );
   }

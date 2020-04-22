@@ -14,7 +14,6 @@ class Header extends React.Component {
         <Link to="/" className="section__header-link">
           <div className="title">Chen He</div>
         </Link>
-        <hr />
       </div>
     );
   }
