@@ -1,14 +1,17 @@
 import React, { Fragment } from "react";
 import "./Todo.scss";
 class Todo extends React.Component {
-  state = {};
+  state = { userInput: "" };
+  inputChangeHandler = (event) => {
+    this.setState({ userInput: event.target.value });
+  };
   render() {
     const listing = (
       <div>
-        <div>Hello</div>
-        <ul>
-          <li></li>
-        </ul>
+        <div>{this.state.userInput}</div>
+        <ol>
+          <li>{this.state.userInput}</li>
+        </ol>
       </div>
     );
     return (
@@ -26,9 +29,12 @@ class Todo extends React.Component {
               </a>
             </h1>
           </div>
-          <div>This is Todo list</div>
-          <input value="Add task"></input>
-          <button>Add</button>
+          <input
+            type="text"
+            onChange={this.inputChangeHandler}
+            value={this.state.userInput}
+          ></input>
+          <button>Add To Do</button>
           {listing}
         </div>
       </Fragment>
